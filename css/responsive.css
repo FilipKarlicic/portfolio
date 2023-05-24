@@ -1,0 +1,215 @@
+@media screen and (max-width: 1025px) {
+  header nav ul li a {
+    font-size: 20px;
+  }
+  header nav ul li {
+    margin-top: 10px;
+  }
+  .link {
+    width: 15%;
+  }
+  .link a {
+    font-size: 22px;
+  }
+  .o-meni {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .link1 a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  header nav ul li a {
+    font-size: 16px;
+  }
+  .link {
+    width: 20%;
+  }
+  .link a {
+    font-size: 22px;
+  }
+  .tamnije h2 {
+    font-size: 24px;
+  }
+  .tamnije p {
+    font-size: 20px;
+  }
+  .link1 {
+    width: 40%;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .biografija {
+    margin-left: 20px;
+  }
+  .biografija p {
+    font-size: 20px;
+  }
+  .link1 a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 601px) {
+  h1 {
+    font-size: 44px;
+  }
+  .tamnije p {
+    font-size: 16px;
+  }
+  .link a {
+    font-size: 16px;
+  }
+  .link {
+    height: 40px;
+  }
+  .o-meni {
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    display: block;
+    padding-left: 150px;
+  }
+  .biografija {
+    width: 90%;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 535px) {
+  #logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .link {
+    width: 20%;
+  }
+  .o-meni {
+    padding-left: 110px;
+  }
+  .biografija {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .skills h2 {
+    font-size: 24px;
+  }
+  .skills h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .sidebar nav ul li a {
+    font-size: 14px;
+  }
+  header nav ul {
+    margin-left: 10px;
+  }
+  .link {
+    width: 25%;
+  }
+  .o-meni {
+    padding-left: 80px;
+  }
+  .link1 {
+    width: 50%;
+  }
+  .link1 a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margins) + 1rem);
+    background-color: var(--foreground);
+    color: var(--background);
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .sidebar {
+    display: flex;
+  }
+  nav {
+    width: 100%;
+  }
+  .d-flex {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  header nav ul li a {
+    font-size: 24px;
+    line-height: 80px;
+  }
+  .o-meni {
+    height: 900px;
+    padding-left: 50px;
+  }
+  .link1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .skills {
+    height: 600px;
+    padding-top: 100px;
+  }
+} 
+@media screen and (max-width: 376px) {
+  .link {
+    width: 30%;
+  }
+  .mojaslika {
+    margin-right: 150px;
+  }
+  .o-meni {
+    height: 900px;
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .link a {
+    font-size: 15px;
+  }
+  .mojaslika {
+    width: 100%;
+    height: 325px;
+  }
+  .mojaslika img {
+    width: 100%;
+  }
+  .biografija p {
+    font-size: 16px;
+  }
+  .link1 a {
+    font-size: 16px;
+  }
+  .link1 {
+    height: 30px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+  .o-meni {
+    height: 800px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

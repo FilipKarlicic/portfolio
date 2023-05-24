@@ -1,0 +1,314 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --pozadinska:rgba(13, 0, 255, 0.204);
+  --isticanje:rgba(255, 0, 0, 0.548);
+  --slova:rgba(255, 255, 255, 0.632);
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground:#333333;
+  --background: white;
+  --hamburger-margins: 5px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2) ;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: white;
+}
+h1 a {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  font-size: 54px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.center-blok {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+header nav ul li {
+  margin: 0px 10px;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.padding-tb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header nav ul li a {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+/* header nav ul {
+  margin-top: 10px;
+} */
+.active a, header nav ul li a:hover {
+  color: var(--isticanje);
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: none;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: var(--hamburger-margins);
+  right: var(--hamburger-margins);
+  z-index: 2;
+  cursor: pointer;
+  margin-top: 23px;
+}
+
+.hamburger-menu:has(input:checked) {
+  --foreground: white;
+  --backgorund: #333;
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid var(--backgorund);
+  box-shadow: 0 0 0 1px var(--foreground);
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+}
+
+.hamburger-menu input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+} 
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tamnije {
+  width: 100%;
+  height: 620px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding-top: 150px;
+}
+
+.slika {
+  width: 100%;
+  height: 620px;
+  background-image: url("../img/proba.jpg");
+  padding: 50px auto;
+}
+.slika p {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  padding-bottom: 20px;
+  border-radius: 50%;
+}
+.slika h2 {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  font-size: 34px;
+  padding-bottom: 20px;
+}
+
+.link, .link1 {
+  width: 15%;
+  height: 50px;
+  margin: 0 auto;
+  border: 2px solid white;
+  text-align: center;
+  padding-top: 5px;
+}
+.link a, .link1 a {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  font-family: bold;
+}
+.link a:hover, .link1 a:hover {
+  color: rgba(255, 0, 0, 0.548);
+}
+
+.o-meni {
+  width: 100%;
+  height: 520px;
+  background-color: black;
+  padding-top: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.mojaslika {
+  width: 325px;
+  height: 388px;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.biografija {
+  width: 60%;
+  height: 380px;
+  margin-top: 50px;
+}
+
+.biografija p {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+}
+
+.link1 {
+  width: 25%;
+  float: left;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.skills, .projects {
+  width: 100%;
+  height: 650px;
+  background-color: black;
+  text-align: center;
+  padding-top: 20px;
+}
+.skills h2, .projects h2 {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.skills progress, .projects progress {
+  height: 24px;
+}
+.skills h3, .projects h3 {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+}
+.skills hr, .projects hr {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.w3-light-grey {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.projects {
+  display: flex;
+  margin-top: -10px;
+}
+.projects a:hover {
+  opacity: 0.3;
+}
+
+.naslov1 {
+  height: 100px;
+  margin-top: -10px;
+  background-color: black;
+  text-align: center;
+}
+.naslov1 hr {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.naslov1 h2 {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  font-size: 34px;
+}
+
+.project1 p {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
