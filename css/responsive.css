@@ -50,6 +50,12 @@
   .link1 a {
     font-size: 16px;
   }
+  input[type=text], select, textarea {
+    height: 40px;
+  }
+  footer p {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 601px) {
   h1 {
@@ -74,6 +80,12 @@
   .biografija {
     width: 90%;
     margin-left: 0px;
+  }
+  .project1 p {
+    font-size: 12px;
+  }
+  textarea {
+    width: 90%;
   }
 }
 @media screen and (max-width: 535px) {
@@ -101,6 +113,19 @@
   .skills h3 {
     font-size: 20px;
   }
+  .projects {
+    height: 700px;
+    display: block;
+    padding-left: 50px;
+    padding-top: 0px;
+  }
+  .project1 {
+    width: 90%;
+    height: 250px;
+  }
+  footer p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 481px) {
   .sidebar nav ul li a {
@@ -120,6 +145,12 @@
   }
   .link1 a {
     font-size: 16px;
+  }
+  .naslov1 h2 {
+    font-size: 24px;
+  }
+  #forma {
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 436px) {
@@ -173,6 +204,18 @@
     height: 600px;
     padding-top: 100px;
   }
+  input[type=text], select, textarea {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    display: inline;
+  }
+  form select {
+    margin-bottom: 20px;
+  }
+  .css-sass ul li {
+    margin-right: 20px;
+  }
 } 
 @media screen and (max-width: 376px) {
   .link {
@@ -185,6 +228,9 @@
     height: 900px;
     padding-left: 25px;
     padding-right: 20px;
+  }
+  .css-sass ul li {
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 321px) {
@@ -211,5 +257,11 @@
   }
   .o-meni {
     height: 800px;
+  }
+  input[type=text], select, textarea {
+    width: 90%;
+    height: 50px;
+    margin-bottom: 20px;
+    display: inline;
   }
 }/*# sourceMappingURL=responsive.css.map */
