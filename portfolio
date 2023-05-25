@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Filip Karličić | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/ico.ico"/>
+    <!--css resposive-->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+    <!--web ikonice-->
+    <script src="https://kit.fontawesome.com/bbd21e34d4.js" crossorigin="anonymous"></script>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet"/>
+    <!--hamburger-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <div class="center-blok d-flex space-between padding-tb-20 text-center">
+            <div id="logo" class="logo">
+                <h1>
+                    <a href="index.html">FK</a>
+                </h1>
+            </div>
+           
+                <label class="hamburger-menu">
+                    <input type="checkbox"/>
+                    
+                </label>
+    
+                <aside class="sidebar">
+                    <nav>
+                    
+                        <ul class="d-flex">
+                            <li>
+                                <a href="#logo">Home</a>
+                            </li>
+                            <li>
+                                <a href="#o-meni">About</a>
+                            </li>
+                            <li>
+                                <a href="#skills">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </aside>
+            
+        </div>
+    </header>
+    <div class="slika">
+         <div class="tamnije">
+            <h2>UI/UX DESIGNER</h2>
+            <p>We created artificial intelligence (AI) and that's why it will never have what we have.</p>
+            <div class="link">
+                <a href="#">Download CV</a>
+            </div>
+        </div>
+    </div>   
+    <div class="o-meni" id="o-meni">
+        <div class="mojaslika">
+            <img src="img/mojaslika.png" alt="mojaslika"/>
+        </div>
+        <div class="biografija">
+            <p>My name is Filip Karličić, I am 21 years old and I am a Front-end developer. I attended the high school "Jezdimir Lović" in Sjenica. I have always wanted to do something related to computers and in the field of IT sector, so I decided on Front-end programming. I work within all Front-end languages, such as HTML, CSS, JavaScript, Bootstrap, SASS...
+            </p>
+            <div class="link1">
+                <a href="#">Download CV</a>
+            </div>
+            <div class="link1">
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h2>MY SKILLS</h2>
+        <hr>
+        <h3>HTML5</h3>
+        <div class="w3-light-grey">
+            
+            <div class="w3-red" style="height:24px;width:75%"></div>
+          </div><br>
+          <h3>CSS3</h3>
+        <div class="w3-light-grey">
+            
+            <div class="w3-red" style="height:24px;width:65%"></div>
+          </div><br>
+          <h3>SASS</h3>
+        <div class="w3-light-grey">
+            
+            <div class="w3-red" style="height:24px;width:50%"></div>
+          </div><br>
+          <h3>JAVASCRIPT</h3>
+        <div class="w3-light-grey">
+            
+            <div class="w3-red" style="height:24px;width:30%"></div>
+          </div><br>
+          <br>
+          <br>
+          
+    </div>
+    <div class="naslov1"> 
+        <h2>PROJECTS</h2>
+        <hr>
+    
+    </div>
+ 
+    <div class="projects" id="projects">
+       
+        <div class="project1">
+        
+           <a href="https://filipkarlicic.github.io/pester/" target="_blank"> <img src="img/project1.png" alt="project1" width="80%"/></a>
+           <p>HTML/CSS</p>
+    
+        </div>
+        <div class="project1">
+           <a href="#logo"> <img src="img/project2.png" alt="project1" width="80%"/></a>
+           <p>HTML/CSS/SASS</p>
+        </div>
+        <div class="project1">
+            <a href="#logo"> <img src="img/project2.png" alt="project1" width="80%"/></a>
+            <p>HTML/CSS/SASS/BOOTSTREP
+            </p>
+        </div>
+    </div>
+    <div id="forma">
+        <h2>CONTACT</h2>
+        <hr>
+        <form >
+            
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+           
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+           
+            <input type="text" id="lname" name="lastname" placeholder="Email..">
+           
+            <select id="country" name="country">
+              <option value="australia">Serbia</option>
+              <option value="canada">Germany</option>
+              <option value="usa">Russia</option>
+              <option value="usa">USA</option>
+            </select>
+        
+           
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <br/>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+    <footer>
+        <div class="css-sass">
+            <ul>
+                <li><a href="css/style.css" target="_blank"><i class="fa-brands fa-css3-alt fa-2xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="css/style.scss"  target="_blank"><i class="fa-brands fa-sass fa-2xl" style="color: #ffffff;"></i></a></li>
+                <li> <a href="#"  target="_blank"><i class="fa-solid fa-sitemap fa-2xl" style="color: #ffffff;"></i></a></li> 
+            </ul>
+        </div>
+        <div class="drmreze">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a></li> 
+            </ul>
+        </div>
+        <p class="copy">Privacy | Terms &amp; Conditions | Contact Copyright © 2023 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
